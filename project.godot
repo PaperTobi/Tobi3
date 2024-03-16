@@ -15,10 +15,6 @@ run/main_scene="res://Menu/Menu.tscn"
 config/features=PackedStringArray("4.2", "C#", "Mobile")
 config/icon="res://icon.svg"
 
-[display]
-
-window/size/mode=3
-
 [dotnet]
 
 project/assembly_name="2DJ&R"
