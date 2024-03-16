@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://bjxdnphbos8tc"]
 
-[ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_2s7jt"]
+[ext_resource type="Script" path="res://CharacterBody2D.cs" id="1_ofai1"]
 [ext_resource type="Texture2D" uid="uid://cx0gnncdgvlv1" path="res://FreeKnight_v1/Colour2/Outline/120x80_PNGSheets/_Run.png" id="2_2bscg"]
 [ext_resource type="Texture2D" uid="uid://cmskggnetxv1e" path="res://FreeKnight_v1/Colour2/Outline/120x80_PNGSheets/_Idle.png" id="2_g7lgg"]
 
@@ -216,7 +216,7 @@ _data = {
 [node name="Node2D" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-script = ExtResource("1_2s7jt")
+script = ExtResource("1_ofai1")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 zoom = Vector2(3.45, 3.45)
