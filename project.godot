@@ -10,10 +10,14 @@ config_version=5
 
 [application]
 
-config/name="2DJ&R"
-run/main_scene="res://Menu.tscn"
+config/name="Tobi3"
+run/main_scene="res://Menu/Menu.tscn"
 config/features=PackedStringArray("4.2", "C#", "Mobile")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/mode=3
 
 [dotnet]
 
