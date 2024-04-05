@@ -1,33 +1,15 @@
-[gd_scene format=3 uid="uid://bca5qosknnfkb"]
+[gd_scene load_steps=2 format=3 uid="uid://bca5qosknnfkb"]
 
-[node name="Node2D" type="CanvasLayer"]
+[ext_resource type="Script" path="res://Menu/Menu.cs" id="1_g61f0"]
 
-[node name="Control" type="Control" parent="."]
+[node name="Control" type="Control"]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_g61f0")
 
-[node name="Level3Button" type="Button" parent="Control"]
-offset_left = 379.0
-offset_top = 97.0
-offset_right = 441.0
-offset_bottom = 128.0
-text = "Level 3"
-
-[node name="Level2Button" type="Button" parent="Control"]
-offset_left = 189.0
-offset_top = 93.0
-offset_right = 251.0
-offset_bottom = 124.0
-text = "Level 2"
-
-[node name="Level1Button" type="Button" parent="Control"]
+[node name="Play" type="Button" parent="."]
 layout_mode = 0
-offset_left = 20.0
-offset_top = 88.0
-offset_right = 82.0
-offset_bottom = 119.0
-text = "Level 1"
+offset_right = 8.0
+offset_bottom = 8.0

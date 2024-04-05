@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://c252jqs2xnk41"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Resume" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 278.0
+offset_top = 58.0
+offset_right = 348.0
+offset_bottom = 89.0
+text = "Resume"
+
+[node name="Exit" type="Button" parent="Control"]
+offset_left = 329.0
+offset_top = 165.0
+offset_right = 366.0
+offset_bottom = 196.0
+text = "Exit"
