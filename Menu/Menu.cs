@@ -13,57 +13,12 @@ public partial class menu : Control
 	public override void _Process(double delta)
 	{
 	}
-	// 
-	private void _on_options_pressed()
-	{
-		// Replace with function body.
-		GD.Print("Option button");
-		GetTree().ChangeSceneToFile("res://options.tscn");
-	}
-	//
-	private void _on_exit_pressed()
-	{
-		// Replace with function body.
-		GD.Print("Exit button");
-		GetTree().Quit();
-	}
 	//
 	private void _on_play_pressed()
 	{
 		// Replace with function body.
 		GD.Print("Play button");
-		GetTree().ChangeSceneToFile("res://play.tscn");
-	}
-	private void _on_texture_button_pressed()
-	{
-		// Replace with function body.
-		GD.Print("Chat scene");
-		GetTree().ChangeSceneToFile("res://chat.tscn");
+		GetTree().ChangeSceneToFile("res://Level1/1Level.tscn");
 	}
 	//
-	private void _on_back_pressed()
-	{
-		// Replace with function body.
-		GD.Print("Back button");
-		GetTree().ChangeSceneToFile("res://menu.tscn");
-	}
-	
-	private void _on_check_button_toggled(bool button_pressed)
-	{
-		// Replace with function body.
-		
-		var streamPlayer = GetNode<AudioStreamPlayer2D>("AudioStreamPlayer2D");
-		streamPlayer.Stream = GD.Load<AudioStream>("res://ship-radar.wav");
-		if(button_pressed) 
-		{ 
-			GD.Print("CheckButton sound : ", button_pressed);
-			streamPlayer.Play();
-		}
-		else 
-		{
-			GD.Print("CheckButton sound : ", button_pressed);
-			streamPlayer.Stop();
-		}
-	}
-// top level closed
 }

@@ -13,3 +13,4 @@ script = ExtResource("1_g61f0")
 layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
+text = "Play"
