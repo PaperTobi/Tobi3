@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://ctgumjaytuoch"]
+[gd_scene load_steps=16 format=3 uid="uid://ctgumjaytuoch"]
 
 [ext_resource type="TileSet" uid="uid://08mkofgbxx70" path="res://level/tileset.tres" id="1"]
 [ext_resource type="Texture2D" uid="uid://bj6am5nfc0k73" path="res://level/props/grass_1.webp" id="10"]
@@ -9,7 +9,6 @@
 [ext_resource type="Texture2D" uid="uid://dea1a76o6b0ix" path="res://level/props/tree_2.webp" id="15"]
 [ext_resource type="PackedScene" uid="uid://vh7pmputa7r3" path="res://player/player.tscn" id="15_6c7mj"]
 [ext_resource type="Texture2D" uid="uid://cqydct6vajobg" path="res://level/props/bush_1.webp" id="16"]
-[ext_resource type="PackedScene" uid="uid://cc02rhvdt42iw" path="res://controlphone.tscn" id="16_3a06h"]
 [ext_resource type="Texture2D" uid="uid://co8bwstg3ea6x" path="res://level/props/rock_1.webp" id="17"]
 [ext_resource type="Material" uid="uid://djwm5nol3d801" path="res://level/props/wind_sway.tres" id="18"]
 [ext_resource type="Texture2D" uid="uid://c5xpotfxdi0ms" path="res://level/props/fern_1.webp" id="19"]
@@ -1544,15 +1543,3 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("17")
 
 [node name="Player" parent="." instance=ExtResource("15_6c7mj")]
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-scale = Vector2(1.25, 1.25)
-zoom = Vector2(2, 2)
-
-[node name="Control" parent="Player/Camera2D" instance=ExtResource("16_3a06h")]
-light_mask = 1023
-visibility_layer = 1023
-offset_left = -281.0
-offset_top = -156.0
-offset_right = -241.0
-offset_bottom = -116.0
