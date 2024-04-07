@@ -1,6 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://vh7pmputa7r3"]
+[gd_scene load_steps=17 format=3 uid="uid://vh7pmputa7r3"]
 
 [ext_resource type="Script" path="res://player/player.cs" id="1_v0b0i"]
+[ext_resource type="PackedScene" uid="uid://cc02rhvdt42iw" path="res://controlphone.tscn" id="4_fk3fc"]
 [ext_resource type="AudioStream" uid="uid://sjod173axgwf" path="res://player/jump.wav" id="5"]
 [ext_resource type="Texture2D" uid="uid://cc7o7t0ramd6y" path="res://player/robot.webp" id="9"]
 
@@ -216,7 +217,6 @@ limit_bottom = 690
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-2.83122e-06, 10)
-scale = Vector2(1, 1)
 shape = SubResource("11")
 
 [node name="Jump" type="AudioStreamPlayer2D" parent="."]
@@ -251,3 +251,9 @@ position = Vector2(1870, 564)
 scale = Vector2(2, 2)
 action = "shoot"
 visibility_mode = 1
+
+[node name="Control" parent="." instance=ExtResource("4_fk3fc")]
+offset_left = -182.5
+offset_top = -85.0
+offset_right = -142.5
+offset_bottom = -45.0

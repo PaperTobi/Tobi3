@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://cc02rhvdt42iw"]
+
+[ext_resource type="Texture2D" uid="uid://qg23nnr20n1n" path="res://icon.svg" id="1_se2do"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+position = Vector2(0, 2)
+scale = Vector2(0.355, 0.12)
+texture_normal = ExtResource("1_se2do")
+action = "ui_right"
+
+[node name="TouchScreenButton2" type="TouchScreenButton" parent="."]
+position = Vector2(153, 3)
+scale = Vector2(0.355, 0.12)
+texture_normal = ExtResource("1_se2do")
+action = "ui_left"
+
+[node name="TouchScreenButton3" type="TouchScreenButton" parent="."]
+position = Vector2(2, 64)
+scale = Vector2(0.355, 0.12)
+texture_normal = ExtResource("1_se2do")
+action = "ui_jump"
