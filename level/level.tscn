@@ -1312,6 +1312,7 @@ offset = Vector2(35.3364, -1.40192)
 
 [node name="B31" type="Sprite2D" parent="Bushes"]
 z_index = -2
+texture_filter = 5
 material = ExtResource("18")
 position = Vector2(-498.685, -14.4639)
 texture = ExtResource("16")
