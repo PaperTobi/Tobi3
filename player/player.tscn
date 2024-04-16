@@ -1,7 +1,6 @@
-[gd_scene load_steps=17 format=3 uid="uid://vh7pmputa7r3"]
+[gd_scene load_steps=16 format=3 uid="uid://vh7pmputa7r3"]
 
 [ext_resource type="Script" path="res://player/player.cs" id="1_v0b0i"]
-[ext_resource type="Texture2D" uid="uid://qg23nnr20n1n" path="res://icon.svg" id="4_huyxt"]
 [ext_resource type="AudioStream" uid="uid://sjod173axgwf" path="res://player/jump.wav" id="5"]
 [ext_resource type="Texture2D" uid="uid://cc7o7t0ramd6y" path="res://player/robot.webp" id="9"]
 
@@ -221,7 +220,6 @@ limit_bottom = 690
 [node name="Left" type="TouchScreenButton" parent="UI"]
 position = Vector2(372, 377)
 scale = Vector2(0.125, 0.125)
-texture_normal = ExtResource("4_huyxt")
 passby_press = true
 action = "move_left"
 visibility_mode = 1
@@ -229,7 +227,6 @@ visibility_mode = 1
 [node name="Right" type="TouchScreenButton" parent="UI"]
 position = Vector2(494, 378)
 scale = Vector2(0.13, 0.13)
-texture_normal = ExtResource("4_huyxt")
 passby_press = true
 action = "move_right"
 visibility_mode = 1
@@ -237,14 +234,12 @@ visibility_mode = 1
 [node name="Jump" type="TouchScreenButton" parent="UI"]
 position = Vector2(428, 375)
 scale = Vector2(0.14, 0.14)
-texture_normal = ExtResource("4_huyxt")
 action = "jump"
 visibility_mode = 1
 
 [node name="Fire" type="TouchScreenButton" parent="UI"]
 position = Vector2(428, 294)
 scale = Vector2(0.1375, 0.1375)
-texture_normal = ExtResource("4_huyxt")
 action = "shoot"
 visibility_mode = 1
 

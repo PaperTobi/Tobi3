@@ -15,6 +15,11 @@ run/main_scene="res://level/level.tscn"
 config/features=PackedStringArray("4.2", "C#", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Level="*res://level/level.tscn"
+Level2="*res://level2/level.tscn"
+
 [dotnet]
 
 project/assembly_name="2DJ&R"
