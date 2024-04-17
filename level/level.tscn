@@ -280,20 +280,6 @@ position = Vector2(439, 381)
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("12")
 
-[node name="g75" type="Sprite2D" parent="Grass"]
-z_index = -1
-material = ExtResource("18")
-position = Vector2(499, 74)
-scale = Vector2(0.8, 0.8)
-texture = ExtResource("12")
-
-[node name="g73" type="Sprite2D" parent="Grass"]
-z_index = -1
-material = ExtResource("18")
-position = Vector2(563, 82)
-scale = Vector2(0.8, 0.8)
-texture = ExtResource("12")
-
 [node name="g33" type="Sprite2D" parent="Grass"]
 z_index = -1
 material = ExtResource("18")
@@ -351,12 +337,6 @@ material = ExtResource("18")
 position = Vector2(641, 629)
 texture = ExtResource("19")
 
-[node name="f7" type="Sprite2D" parent="Grass"]
-z_index = -1
-material = ExtResource("18")
-position = Vector2(433, 61)
-texture = ExtResource("19")
-
 [node name="f8" type="Sprite2D" parent="Grass"]
 z_index = -1
 material = ExtResource("18")
@@ -373,12 +353,6 @@ texture = ExtResource("19")
 z_index = -1
 material = ExtResource("18")
 position = Vector2(495, 187)
-texture = ExtResource("19")
-
-[node name="f3" type="Sprite2D" parent="Grass"]
-z_index = -1
-material = ExtResource("18")
-position = Vector2(524, 70)
 texture = ExtResource("19")
 
 [node name="f4" type="Sprite2D" parent="Grass"]
@@ -406,13 +380,6 @@ position = Vector2(603, 381)
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("12")
 
-[node name="g74" type="Sprite2D" parent="Grass"]
-z_index = -1
-material = ExtResource("18")
-position = Vector2(578, 88)
-scale = Vector2(0.8, 0.8)
-texture = ExtResource("12")
-
 [node name="g27" type="Sprite2D" parent="Grass"]
 z_index = -1
 material = ExtResource("18")
@@ -431,13 +398,6 @@ texture = ExtResource("12")
 z_index = -1
 material = ExtResource("18")
 position = Vector2(467.8, 189.8)
-scale = Vector2(0.8, 0.8)
-texture = ExtResource("12")
-
-[node name="g71" type="Sprite2D" parent="Grass"]
-z_index = -1
-material = ExtResource("18")
-position = Vector2(563.8, 189.8)
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("12")
 
@@ -777,27 +737,6 @@ position = Vector2(405, 113)
 scale = Vector2(1, -1)
 texture = ExtResource("21")
 
-[node name="v27" type="Sprite2D" parent="Grass"]
-z_index = 1
-material = ExtResource("18")
-position = Vector2(605, 146)
-scale = Vector2(1, -1)
-texture = ExtResource("22")
-
-[node name="v25" type="Sprite2D" parent="Grass"]
-z_index = 1
-material = ExtResource("18")
-position = Vector2(636, 160)
-scale = Vector2(1, -1)
-texture = ExtResource("21")
-
-[node name="v26" type="Sprite2D" parent="Grass"]
-z_index = 1
-material = ExtResource("18")
-position = Vector2(636, 160)
-scale = Vector2(1, -1)
-texture = ExtResource("21")
-
 [node name="v24" type="Sprite2D" parent="Grass"]
 z_index = 1
 material = ExtResource("18")
@@ -854,13 +793,6 @@ position = Vector2(307, 115)
 scale = Vector2(1, -1)
 texture = ExtResource("21")
 
-[node name="v17" type="Sprite2D" parent="Grass"]
-z_index = -1
-material = ExtResource("18")
-position = Vector2(535, 137)
-scale = Vector2(1, -1)
-texture = ExtResource("21")
-
 [node name="v38" type="Sprite2D" parent="Grass"]
 z_index = -1
 material = ExtResource("18")
@@ -874,13 +806,6 @@ material = ExtResource("18")
 position = Vector2(541, 245)
 scale = Vector2(1, -1)
 texture = ExtResource("21")
-
-[node name="v18" type="Sprite2D" parent="Grass"]
-z_index = -1
-material = ExtResource("18")
-position = Vector2(693, 190)
-scale = Vector2(1, -1)
-texture = ExtResource("22")
 
 [node name="v19" type="Sprite2D" parent="Grass"]
 z_index = -1
@@ -970,13 +895,6 @@ texture = ExtResource("10")
 z_index = -1
 material = ExtResource("18")
 position = Vector2(1069, 380)
-scale = Vector2(0.8, 0.8)
-texture = ExtResource("10")
-
-[node name="g76" type="Sprite2D" parent="Grass"]
-z_index = -1
-material = ExtResource("18")
-position = Vector2(591, 89)
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("10")
 
@@ -1254,12 +1172,6 @@ material = ExtResource("18")
 position = Vector2(185, 433)
 texture = ExtResource("16")
 
-[node name="B22" type="Sprite2D" parent="Bushes"]
-z_index = -2
-material = ExtResource("18")
-position = Vector2(473, 57)
-texture = ExtResource("16")
-
 [node name="B16" type="Sprite2D" parent="Bushes"]
 z_index = -2
 material = ExtResource("18")
@@ -1289,14 +1201,6 @@ texture = ExtResource("16")
 z_index = -2
 material = ExtResource("18")
 position = Vector2(637, 379)
-rotation = 0.181514
-texture = ExtResource("16")
-offset = Vector2(35.3364, -1.40192)
-
-[node name="B20" type="Sprite2D" parent="Bushes"]
-z_index = -2
-material = ExtResource("18")
-position = Vector2(643, 110)
 rotation = 0.181514
 texture = ExtResource("16")
 offset = Vector2(35.3364, -1.40192)
@@ -1336,15 +1240,6 @@ texture = ExtResource("16")
 z_index = -2
 material = ExtResource("18")
 position = Vector2(1138.31, -8.46387)
-rotation = -2.96008
-scale = Vector2(1, -1)
-texture = ExtResource("16")
-offset = Vector2(35.3364, -1.40192)
-
-[node name="B21" type="Sprite2D" parent="Bushes"]
-z_index = -2
-material = ExtResource("18")
-position = Vector2(669, 113)
 rotation = -2.96008
 scale = Vector2(1, -1)
 texture = ExtResource("16")
@@ -1520,11 +1415,6 @@ texture = ExtResource("17")
 [node name="R12" type="Sprite2D" parent="Rocks"]
 z_index = -2
 position = Vector2(-164, 256)
-texture = ExtResource("17")
-
-[node name="R6" type="Sprite2D" parent="Rocks"]
-z_index = -2
-position = Vector2(558, 62)
 texture = ExtResource("17")
 
 [node name="R4" type="Sprite2D" parent="Rocks"]

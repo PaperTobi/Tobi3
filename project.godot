@@ -11,14 +11,15 @@ config_version=5
 [application]
 
 config/name="Tobi3"
-run/main_scene="res://level/level.tscn"
+run/main_scene="res://menu.tscn"
 config/features=PackedStringArray("4.2", "C#", "Mobile")
 config/icon="res://icon.svg"
 
-[autoload]
+[display]
 
-Level="*res://level/level.tscn"
-Level2="*res://level2/level.tscn"
+window/size/viewport_width=3840
+window/size/viewport_height=2160
+window/size/mode=4
 
 [dotnet]
 
