@@ -14,37 +14,28 @@ public partial class menu : Control
 	{
 	}
 	// 
-	private void _on_options_pressed()
+	private void _on_level1_pressed()
 	{
 		// Replace with function body.
-		GD.Print("Option button");
 		GetTree().ChangeSceneToFile("res://level/level.tscn");
 	}
 	//
+	private void _on_level2_pressed()
+	{
+		// Replace with function body.
+
+	}
+	private void _on_level_2_pressed()
+	{
+		GetTree().ChangeSceneToFile("res://level2/level.tscn");
+	}
 	private void _on_exit_pressed()
 	{
 		// Replace with function body.
 		GD.Print("Exit button");
 		GetTree().Quit();
 	}
-	//
-	private void _on_play_pressed()
-	{
-		// Replace with function body.
-		GD.Print("Play button");
-		GetTree().ChangeSceneToFile("res://level2/level.tscn");
-	}
-	//
-	private void _on_back_pressed()
-	{
-		// Replace with function body.
-		GD.Print("Back button");
-		GetTree().ChangeSceneToFile("res://menu.tscn");
-	}
-	
-	
-	
-// top level closed
+
 }
 
 
