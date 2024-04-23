@@ -189,10 +189,6 @@ floor_constant_speed = true
 platform_on_leave = 2
 script = ExtResource("1_v0b0i")
 
-[node name="PlatformDetector" type="RayCast2D" parent="."]
-target_position = Vector2(0, 6)
-collision_mask = 8
-
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(1.69141, 1.69141)
 texture = ExtResource("9")
