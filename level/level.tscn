@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://ctgumjaytuoch"]
+[gd_scene load_steps=20 format=3 uid="uid://ctgumjaytuoch"]
 
 [ext_resource type="TileSet" uid="uid://08mkofgbxx70" path="res://level/tileset.tres" id="1"]
 [ext_resource type="Texture2D" uid="uid://bj6am5nfc0k73" path="res://level/props/grass_1.webp" id="10"]
@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://icddaryasunc" path="res://level/props/tree_1.webp" id="14"]
 [ext_resource type="Texture2D" uid="uid://dea1a76o6b0ix" path="res://level/props/tree_2.webp" id="15"]
 [ext_resource type="PackedScene" uid="uid://vh7pmputa7r3" path="res://player/player.tscn" id="15_6c7mj"]
+[ext_resource type="Texture2D" uid="uid://bwsqbn1rjqs74" path="res://level/Sky.png" id="15_h7tql"]
+[ext_resource type="Texture2D" uid="uid://xmrh5ft3oekr" path="res://level/Checkpoint.png" id="15_qyft1"]
 [ext_resource type="Texture2D" uid="uid://cqydct6vajobg" path="res://level/props/bush_1.webp" id="16"]
 [ext_resource type="Texture2D" uid="uid://co8bwstg3ea6x" path="res://level/props/rock_1.webp" id="17"]
 [ext_resource type="Texture2D" uid="uid://c5xpotfxdi0ms" path="res://level/props/fern_1.webp" id="19"]
@@ -71,6 +73,9 @@ shader_parameter/detail = 1.0
 shader_parameter/distortion = null
 shader_parameter/heightOffset = null
 shader_parameter/offset = 0.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_atf43"]
+size = Vector2(282.027, 426.171)
 
 [node name="Level" type="Node2D"]
 process_mode = 1
@@ -1489,5 +1494,22 @@ position = Vector2(72, 639)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("17")
 
+[node name="Sky" type="Sprite2D" parent="."]
+position = Vector2(315, 15)
+scale = Vector2(1.90417, 1.90417)
+texture = ExtResource("15_h7tql")
+
+[node name="Checkpint" type="Sprite2D" parent="."]
+position = Vector2(1294, -42)
+scale = Vector2(0.222, 0.222)
+texture = ExtResource("15_qyft1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Checkpint"]
+position = Vector2(30.1572, -10.3829)
+shape = SubResource("RectangleShape2D_atf43")
+
 [node name="Player" parent="." instance=ExtResource("15_6c7mj")]
-position = Vector2(349, 600)
+light_mask = 1023
+visibility_layer = 1023
+z_index = 100
+position = Vector2(304, 603)
