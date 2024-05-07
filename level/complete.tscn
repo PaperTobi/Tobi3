@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://uoq7ogyc865"]
 
-[ext_resource type="Script" path="res://level/level1menu.cs" id="1_3ye6t"]
+[ext_resource type="Script" path="res://level/finished_menu.cs" id="1_3ye6t"]
 
 [node name="Complete" type="Node2D"]
 
