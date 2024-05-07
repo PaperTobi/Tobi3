@@ -1495,8 +1495,8 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("17")
 
 [node name="Sky" type="Sprite2D" parent="."]
-position = Vector2(315, 208.749)
-scale = Vector2(1.90417, 2.44236)
+position = Vector2(303, 235)
+scale = Vector2(3.38616, 3.93767)
 texture = ExtResource("15_h7tql")
 
 [node name="Checkpint" type="Sprite2D" parent="."]
@@ -1512,4 +1512,4 @@ shape = SubResource("RectangleShape2D_atf43")
 light_mask = 1023
 visibility_layer = 1023
 z_index = 100
-position = Vector2(304, 603)
+position = Vector2(-89, 611)
