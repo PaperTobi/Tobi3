@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://dea1a76o6b0ix" path="res://level/props/tree_2.webp" id="15"]
 [ext_resource type="PackedScene" uid="uid://vh7pmputa7r3" path="res://player/player.tscn" id="15_6c7mj"]
 [ext_resource type="Texture2D" uid="uid://bwsqbn1rjqs74" path="res://level/Sky.png" id="15_h7tql"]
-[ext_resource type="Texture2D" uid="uid://xmrh5ft3oekr" path="res://level/props/Checkpoint.png" id="15_qyft1"]
+[ext_resource type="Texture2D" uid="uid://xmrh5ft3oekr" path="res://level/Checkpoint.png" id="15_qyft1"]
 [ext_resource type="Texture2D" uid="uid://cqydct6vajobg" path="res://level/props/bush_1.webp" id="16"]
 [ext_resource type="Texture2D" uid="uid://co8bwstg3ea6x" path="res://level/props/rock_1.webp" id="17"]
 [ext_resource type="Texture2D" uid="uid://c5xpotfxdi0ms" path="res://level/props/fern_1.webp" id="19"]
@@ -1509,6 +1509,7 @@ position = Vector2(30.1572, -10.3829)
 shape = SubResource("RectangleShape2D_atf43")
 
 [node name="Player" parent="." instance=ExtResource("15_6c7mj")]
-light_mask = 4
+light_mask = 1023
+visibility_layer = 1023
 z_index = 100
-position = Vector2(-103, 606)
+position = Vector2(304, 603)
