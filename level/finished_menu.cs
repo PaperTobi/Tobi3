@@ -20,6 +20,3 @@ public partial class level1menu : VBoxContainer
 		GetTree().ChangeSceneToFile("res://menu/menu.tscn");
 	}
 }
-
-
-
