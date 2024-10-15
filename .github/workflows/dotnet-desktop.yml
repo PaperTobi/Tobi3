@@ -25,16 +25,73 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Setup Godot for export
+      # Setup Godot for export (using correct action)
       - name: Setup Godot
-        uses: firebelley/godot-export@v1.6
+        uses: firebelley/godot-ci@v3.4
         with:
-          godot-version: '3.5.1' # Passe diese Version an deine Godot Version an
-          use-mono: true # Da du C# verwendest, setze dieses Flag auf true
+          godot-version: '3.5.1-mono-6.12.0.122' # Passende Mono-Version für C#-Support
+          export-templates: true # Lädt die Export-Vorlagen für Windows herunter
 
       # Read the current version from version.txt
       - name: Read version
         id: read_version
         run: |
           if [ ! -f version.txt ]; then
-            echo "0.0.1" > version
+            echo "0.0.1" > version.txt
+          fi
+          version=$(cat version.txt)
+          echo "Current version: $version"
+          echo "::set-output name=version::$version"
+
+      # Update version based on input
+      - name: Update version
+        id: update_version
+        run: |
+          version=$(cat version.txt)
+          major=$(echo $version | cut -d '.' -f 1)
+          minor=$(echo $version | cut -d '.' -f 2)
+          patch=$(echo $version | cut -d '.' -f 3)
+
+          if [ "${{ github.event.inputs.increment_major }}" == "true" ]; then
+            major=$((major + 1))
+            minor=0
+            patch=0
+          elif [ "${{ github.event.inputs.increment_minor }}" == "true" ]; then
+            minor=$((minor + 1))
+            patch=0
+          else
+            patch=$((patch + 1))
+          fi
+
+          new_version="$major.$minor.$patch"
+          echo "New version: $new_version"
+          echo $new_version > version.txt
+          echo "::set-output name=new_version::$new_version"
+
+      # Commit the new version
+      - name: Commit version bump
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add version.txt
+          git commit -m "Bump version to ${{ steps.update_version.outputs.new_version }}"
+          git push
+
+      # Export the project for Windows
+      - name: Export project to Windows
+        run: |
+          mkdir -p exports/windows
+          godot --export-debug "Windows Desktop" "exports/windows/MyGame.exe"
+
+      # Create a GitHub Release and upload the exported files
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: exports/windows/**
+          tag_name: v${{ steps.update_version.outputs.new_version }}
+          name: Release ${{ steps.update_version.outputs.new_version }}
+          body: "Automatically generated release for version ${{ steps.update_version.outputs.new_version }}"
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
